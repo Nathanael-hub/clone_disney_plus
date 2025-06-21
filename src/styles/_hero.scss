@@ -2,28 +2,27 @@
 
 
 .hero {
-    padding: 5.6vw 1vw;
-    min-height: 80vh;
+    padding: 5.6vw;
+    padding-top: 0;
+    padding-left: 16px;
+    width: 100%;
     background-image: url(../images/hero_desktop.jpeg);
     text-align: center;
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    margin-top: -80px;
+    
+
 
     @media (max-width: 768px) {
-        padding: 5.6vw;
         background-image: url(../images/hero_celular.jpeg);
-        padding-top: calc(50vw + 25px);
+        padding-top: calc(50vw);
         background-size: contain;
         background-repeat: no-repeat;
+        background-position: top;
         margin-top: -55px;
-    }
-
-    @media (max-width: 1023px){
-        padding: 5.6vw;
-        background-image: url(../images/hero_tablet.jpg);
-        padding-top: calc(50vw + 25px);
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin-top: -80px;
     }
 
     .button{
@@ -32,9 +31,9 @@
     }
 
     &__content{
-        max-width: 640px;
+        max-width: 500px;
 
-        @media (max-width: 1023px) {
+        @media (max-width: 768px) {
             max-width: none;
         }
 
@@ -44,6 +43,12 @@
 
             @media (max-width: 768px) {
                 max-width: 180px;
+                margin-top: 24px;
+            }
+
+            @media (min-width: 769px) {
+                max-width: 200px;
+                margin-top: 24px;
             }
         }
 
